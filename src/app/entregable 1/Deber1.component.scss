@@ -1,0 +1,68 @@
+.matriz-container {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.matriz-row {
+  display: flex;
+  gap: 5px;
+}
+
+.matriz-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  button {
+    margin-right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+}
+
+.volver-btn {
+  background-color: #87CEFA; /* Azul claro */
+  color: black; /* Texto negro */
+  font-size: 20px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Alineación centrada */
+  padding: 20px 0; /* Espaciado interno (altura) */
+  border: none; /* Sin bordes */
+  border-radius: 0; /* Sin bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  cursor: pointer; /* Cursor en forma de mano */
+  width: 100%; /* Botón ocupa todo el ancho */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  transition: all 0.2s ease-in-out; /* Transición suave */
+}
+
+.volver-btn:hover {
+  background-color: #6bb8e9; /* Azul más oscuro al pasar el mouse */
+}
+
+.volver-btn:active {
+  background-color: #5ca6d6; /* Azul más oscuro al hacer clic */
+}

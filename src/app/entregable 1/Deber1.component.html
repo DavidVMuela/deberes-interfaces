@@ -1,0 +1,25 @@
+<!-- Enlace que actúa como botón -->
+<a href="/casa.component.html">
+  <button class="volver-btn">Volver</button>
+</a>
+
+<div class="matriz-container">
+  <div
+  *ngFor="let row of matriz"
+  class="matriz-row"
+  >
+  <div
+  *ngFor="let cell of row"
+  class="matriz-cell"
+  [ngStyle]="{
+      'width.px': cellSize,
+      'height.px': cellSize,
+      'background-color': cellColor
+  }
+  "></div>
+  </div>
+</div>
+
+<div class="controls">
+  <button *ngFor="let size of [3,4,5,6]" pButton type="button" label="{{ size }}x{{ size }}" (click)="generateMatriz(size)"></button>
+</div>
